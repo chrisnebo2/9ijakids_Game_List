@@ -1,4 +1,4 @@
-# This is an actual project from an online Internship Application
+# This is an actual project from an online Internship I Applied For
 
 ## REQUIREMENTS:
 
