@@ -1,0 +1,71 @@
+.top_banner{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-image: url("https://github.com/9ijakidArchitect/Practicetasks/blob/main/Top%20Banner.png?raw=true");
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F0F4F9;
+}
+
+.top_banner .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 130px;
+    color: #002147;
+    gap: 10px;
+}
+
+.top_banner .container > h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.top_banner .container > h1{
+    width: 60%;
+    font: normal normal normal 50px/78px Georgia;
+    line-height: 140%;
+}
+
+.top_banner .container .buttons > button{
+    margin-right: 25px;
+    width: 180px;
+    height: 55px;
+    align-self: flex-start;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.register{
+    background-color: #FDC800;
+    border: none;
+}
+
+.login{
+    border: 1px solid #b8b8b8;
+    background-color: #fff;
+}
+
+.win_big{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: #F0F4F9;
+    background-image: url("https://github.com/9ijakidArchitect/Practicetasks/blob/main/Timer.png?raw=true");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 123%;
+}
+
+.win_big .container{
+    height: 100%;
+    border: 2px solid black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F0F4F9;
+}

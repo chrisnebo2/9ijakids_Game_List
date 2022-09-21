@@ -1,4 +1,4 @@
-# This is an actual project from an online Internship I Applied For
+# This is an actual project from an online Internship, I Applied For the postion of a frontend React developr
 
 ## TASK
 The task is to create a one-page catalog of 9ijakids games in React, get the images for the ganes in the popular section from  the Games  API. 

@@ -1,34 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React from "react"
+import Header from "../components/Header"
+import Body from "../components/Body"
+import Footer from "../components/Footer"
+import data from "../src/data"
 
-function App() {
-  const [count, setCount] = useState(0)
+
+
+export default function App() {
+  let [allGames, setAllGames] = React.useState([])
+  const [allPopularGames, setAllPopularGames] = React.useState(allGames)
+  const [searchText, setSearchText] = React.useState("")
+
+  React.useEffect(() => {
+    fetch("https://partners.9ijakids.com/index.php?partnerId=555776&accessToken=l0lawtvv-94bv-oi4d-u808-5ubz&action=catalogfilter")
+      .then(response => response.json())
+      .then(data => setAllGames(data))
+  }, [])
+
+  const newArray = allGames.filter(game => {
+    return (
+      game.GameTitle.toLowerCase().includes(searchText.toLowerCase()) ||
+      game.Topic.toLowerCase().includes(searchText.toLowerCase()) ||
+      game.Level.toLowerCase().includes(searchText.toLowerCase()) ||
+      game.Group.toLowerCase().includes(searchText.toLowerCase())
+      )
+  })
+  
+
+  function searchGames() {
+    setAllPopularGames(newArray)
+  }
+
+  
+  function search(event) {
+    setSearchText(event.target.value)
+    searchGames()
+  }
+
+  
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="app">
+      <Header 
+        search={search}
+        searchText={searchText}
+        searchGames={searchGames}
+      />
+      <Body 
+        allPopularGames={allPopularGames}
+        searchText={searchText}
+      />
+      <Footer />
     </div>
   )
 }
-
-export default App

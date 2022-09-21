@@ -1,0 +1,28 @@
+.section{
+    width: 100%;
+    min-height: 780px;
+    display: flex;
+    justify-content: center;
+}
+
+.section .container{
+    display: flex;
+    flex-direction: column;
+    color: #002147;
+}
+.section .container h1{
+    width: 100%;
+    font: normal normal bold 35px/78px Georgia;
+    line-height: 140%;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.section .container .games{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* justify-content: space-between; */
+}
