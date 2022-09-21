@@ -10,6 +10,8 @@
   },
   "proxy": "https://partners.9ijakids.com/index.php?partnerId=555776&accessToken=l0lawtvv-94bv-oi4d-u808-5ubz&action=catalogfilter",
   "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
