@@ -4,7 +4,7 @@
     background-color: #fff;
     width: 100%;
     border: none;
-    height: 170px;
+    height: fit-content;
 }
 
 .heading{
