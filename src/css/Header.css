@@ -1,6 +1,6 @@
 .header{
     position: sticky;
-    top: -70px;
+    top: -60px;
     background-color: #fff;
     width: 100%;
     border: none;
@@ -13,7 +13,7 @@
     background-color: #FDC800;
     display: flex;
     justify-content: center;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .container{
