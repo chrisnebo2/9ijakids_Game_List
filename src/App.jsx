@@ -45,7 +45,6 @@ export default function App() {
   
   function search(event) {
     setSearchText(event.target.value)
-    searchGames()
   }
 
   
