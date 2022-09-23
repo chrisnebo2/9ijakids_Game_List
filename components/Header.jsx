@@ -67,7 +67,7 @@ export default function Header(props) {
                             onChange={props.search}
                             value={props.searchText}
                         />
-                        <i onClick={props.searchGames} className="fa-solid fa-magnifying-glass"></i>
+                        <i onClick={props.searchGames} className="fa-solid fa-magnifying-glass icon"></i>
                     </form>
                 </div>
             </nav>
