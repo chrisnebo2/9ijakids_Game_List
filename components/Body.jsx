@@ -13,7 +13,6 @@ export default function Body(props) {
             </div>
             <GamesSection 
                 allPopularGames={props.allPopularGames}
-                searchText={props.searchText}
             />
             <NewsLetter />
         </div>

@@ -60,14 +60,14 @@ export default function Header(props) {
                     </ul>
 
                     <button className="register">Register</button>
-                    <form className="search">
+                    <form className="search" onSubmit={props.searchGames}>
                         <input 
                             type="text"
                             placeholder="Search games.." 
                             onChange={props.search}
                             value={props.searchText}
                         />
-                        <i onClick={props.searchGames} className="fa-solid fa-magnifying-glass icon"></i>
+                        <button><i onClick={props.searchGames} className="fa-solid fa-magnifying-glass icon"></i></button>
                     </form>
                 </div>
             </nav>

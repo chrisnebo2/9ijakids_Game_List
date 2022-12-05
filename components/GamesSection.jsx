@@ -4,7 +4,7 @@ import "../src/css/GamesSection.css"
 
 
 
-export default function GamesSection({allPopularGames, searchText}) {
+export default function GamesSection({allPopularGames}) {
 
     
     const cardElements = allPopularGames.map((game, index) => {

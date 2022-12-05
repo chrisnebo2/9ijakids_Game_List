@@ -120,9 +120,10 @@
 .search:focus-within input{
     width: 250px;
 }
-.icon:active, .icon:hover > input{
-    width: 250px;
+.icon {
+    cursor: pointer;
 }
+
 .search input{
     background: transparent;
     border: none;
@@ -131,4 +132,9 @@
     font-weight: 400;
     font-size: 16px;
     transition: 0.8s;
+}
+
+button {
+    border: none;
+    background-color: transparent;
 }
