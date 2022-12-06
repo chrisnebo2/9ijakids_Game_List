@@ -1,15 +1,14 @@
 .Card{
     width: 32%;
-    height: 300px;
+    min-height: 200px;
     border:  0.2px solid rgb(204, 204, 204);
+    margin-right: auto;
     margin-bottom: 20px;
     border-radius: 4px;
 }
 
 .Card .image{
     width: 100%;
-    height: 70%;
-    overflow: hidden;
 }
 
 .Card .image img{
@@ -19,19 +18,18 @@
 .Card .card_body{
     display: flex;
     flex-direction: column;
-    padding: 15px 15px;
+    padding: 20px 15px;
     justify-content: center;
     gap: 5px;
 }
 
 .Card .card_body h3{
     font-size: 18px;
-    /* height: 30px; */
     font-weight: 700;
 }
 
 .Card .card_body p{
-    font-size: 14px;
+    text-overflow: ellipsis;
     color: #002147a8;
     font-weight: 400;
 }
