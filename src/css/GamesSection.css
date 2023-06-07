@@ -20,8 +20,8 @@
 
 .section .container .games{
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: space-between;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
 }

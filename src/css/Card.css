@@ -1,6 +1,4 @@
 .Card{
-    width: 32%;
-    min-height: 200px;
     border:  0.2px solid rgb(204, 204, 204);
     margin-bottom: 20px;
     border-radius: 4px;

@@ -1,27 +1,30 @@
 import React, { useEffect } from "react"
 import Header from "../components/Header"
 import Body from "../components/Body"
+import data from "./data"
 import Footer from "../components/Footer"
 
 
 
 
 export default function App() {
-  const [allGames, setAllGames] = React.useState([])
+  const [allGames, setAllGames] = React.useState(data)
+  console.log(data);
   let [searchedGames, setSearchedGames] = React.useState([])
   const [searchText, setSearchText] = React.useState("")
 
-
+  
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+  /////////////////// DISABLED THE FETCH FROM API DUE TO CORS PROBLEMS //////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////////////
   useEffect(() => {
-      fetch("https://partners.9ijakids.com/index.php?partnerId=555776&accessToken=l0lawtvv-94bv-oi4d-u808-5ubz&action=catalogfilter")
-        .then(response => response.json())
-        .then(data => {
-          setAllGames(data)
-          setSearchedGames(data)
-        })
+      setSearchedGames(data)
+      setAllGames(data)
+      // fetch("https://partners.9ijakids.com/index.php?partnerId=555776&accessToken=l0lawtvv-94bv-oi4d-u808-5ubz&action=catalogfilter")
+      //   .then(response => response.json())
+      //   .then(data => {
+      //   })
   }, [])
-
-  console.log(allGames)
       
   function searchGames(event) {
     event.preventDefault()
